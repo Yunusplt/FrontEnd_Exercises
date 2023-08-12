@@ -30,7 +30,7 @@ function NavScrollExample() {
           >
             <Nav.Link href="#action1">Home</Nav.Link>
             <Nav.Link href="#action2">People</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
+            <NavDropdown title="Courses" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Full-stack</NavDropdown.Item>
               <NavDropdown.Item href="#action4">Data-science</NavDropdown.Item>
               {/* <NavDropdown.Divider /> */}
@@ -47,7 +47,7 @@ function NavScrollExample() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-primary">Search</Button>
+            <Button variant="primary">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
