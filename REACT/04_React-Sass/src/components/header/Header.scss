@@ -1,0 +1,12 @@
+@import "../../scss/variable";
+//! $ ile tanimlanmis styler kullanilmadan önce import edilmek zorunda.
+
+header{
+    padding: 2rem;
+    background-color: $yesil;
+
+    h1{
+        color: darkblue;
+        text-align: center;
+    }
+}

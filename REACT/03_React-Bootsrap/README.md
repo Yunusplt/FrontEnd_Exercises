@@ -18,7 +18,7 @@
 - date in footer
 
 
-## RC03 1:15 de kaldik. 
+##  
 
 
 

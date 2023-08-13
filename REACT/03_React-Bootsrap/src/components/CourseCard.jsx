@@ -7,14 +7,20 @@ import Card from "react-bootstrap/Card";
 
 const CourseCard = ({ data }) => {
   // console.log(props.data[0].name);
-  console.log(data);                             // => [{…}, {…}, {…}]
+  // console.log(data);                             // => [{…}, {…}, {…}]
 
   return (
-    <Container>
+    <Container >
       <Row>
         {data.map((item, index) => {
           return (
-            <Col key={index} className="text-center">
+            <Col 
+            key={index} 
+            className="text-center d-flex justify-content-center col-sm-12 col-md-6 col-lg-4"
+            // sm={12}  //! es degerlerini className icerisinde yazdik. line19
+            // md={6}
+            // lg={4}
+            >
               <Card style={{ width: "18rem", padding:"5px 0" }}>
                 <Card.Img variant="top" src={item.img} />
                 <Card.Body>

@@ -1,0 +1,27 @@
+@import "./variable";
+//! _button.scss in baglantisini App.js ile yaptigim icin baska baglantiya gerek yok.
+
+.btn-div{
+    
+    button{
+        color: white;
+        margin: 5px;
+        padding: 3px 10px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            cursor: pointer ;
+            transform: scale(1.2);
+        }
+        
+    }
+
+    &-small{
+        background-color: $lightGreen;
+    }
+
+    &--large{
+        background-color: $darkGreen;
+    }
+}
