@@ -1,0 +1,93 @@
+
+.container-main{
+    //! Bu kullanimda Responsive cok zor
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // gap: 20px;
+    // margin: 50px 0;
+    // justify-items: center;
+    // align-items: center;
+    //! Bu kullanimda sanki Responsivemis gibi otomatik hareket ediyor. 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin: 50px 0;
+    
+
+
+    .card{
+        width: 500px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: transform 1s;
+                            
+        &:hover p{
+            opacity: 1;
+            transform: translateY(-100%);
+            overflow-y: auto;
+        }
+
+        &:hover img{
+            transform: scale(1.1);
+            
+        }
+
+        h2{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.555);
+            color: rgb(182, 165, 165);
+            padding: 8px;
+            border-radius: 15px;
+            margin: 5px;
+            z-index: 1;
+            
+        }
+
+        h4{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.555);
+            color: rgb(182, 165, 165);
+            padding: 8px;
+            border-radius: 15px;
+            z-index: 2;
+           
+        }
+
+        img{
+            width: 500px;
+            height: 350px;
+            object-fit: cover;
+        }
+
+
+
+
+        p{
+            width: 500px;
+            position: absolute;
+            margin-top: 0;
+            font-size: 24px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transition: opacity 0.5s, transform 1s;
+            overflow-y: hidden;
+            background-color:rgba(0, 0, 0, 0.521) ;
+            color: whitesmoke;
+            text-align: justify;
+            padding: 3px;
+            z-index: 3;
+            max-height: 60%;      //! bunu verince sagda scrollbar cikiyor.
+            // overflow: auto;
+
+            &::-webkit-scrollbar{
+                display: none;
+            }
+   
+        }
+    }
+}
