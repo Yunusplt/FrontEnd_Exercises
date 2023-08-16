@@ -32,3 +32,15 @@
 }
 
 
+@include media-xsm {
+    .container-header h1{
+        font-size: 36px;
+    }
+}
+
+@include media-lg {
+    .container-header h1{
+        font-size: 46px;
+    }
+}
+

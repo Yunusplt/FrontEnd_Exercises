@@ -1,8 +1,15 @@
-## Starter
-- npm create react-app my_first_app_starter
+## How it starts
+- npm install
 - npm start
-- delete all files except index.html in public folder.
-- delete all files except App.js and index.js in src folder.
-- look which commands were deleted in App.js and index.js.
-- if you did pull a project. create a node_modules file ,by writing npm install
-- 
+
+
+## How it looks on Mobile and on Laptop(Mackbook Air)
+![Uygulama Ekran Görüntüsü](./horoscope.gif)
+
+## How it looks on Mobile and on screen XL Laptop
+![Uygulama Ekran Görüntüsü](./xlHoroscope.gif)
+
+## What I used
+- React
+- Sass
+
