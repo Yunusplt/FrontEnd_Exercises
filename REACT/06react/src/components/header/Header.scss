@@ -1,0 +1,19 @@
+@import "../../scss/variable";
+
+.container-header{
+    color: $headerColor;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.422);
+    letter-spacing: 2px;
+    margin: 2rem;
+    font-size: 30px;
+    
+}
+
+
+//! Text Shadow
+// - İlk değer: Gölgenin yatay konumu (sağa doğru pozitif, sola doğru negatif değer) 
+// - İkinci değer: Gölgenin dikey konumu (aşaği doğru pozitif, yukari doğru negatif değer) 
+// - Üçüncü değer: Gölgenin bulanikliği (blur) değeri (piksel cinsinden) 
+// - Dördüncü değer: Gölge rengi (örnekte RGBA formati kullanildi)

@@ -1,0 +1,40 @@
+@import "../../scss/variable";
+
+.container-main{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+    gap: 2rem;
+
+    .sec-1 img{
+        width: 16rem;
+        height: 16rem;
+        cursor: pointer;
+        object-fit: cover;
+        transition: transform 0.5s ease-out;
+        
+    }
+
+    .sec-2 h3{
+        color: $titleColor;
+        display: inline;
+        cursor: pointer;
+    }
+
+    .main-card .sec-1{
+        width: 16rem;
+        height: 16rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        margin-bottom: 0.6rem;
+
+        &:hover img{
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+//! margin auto ile ortaladaik dikkat!!!
