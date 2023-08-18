@@ -14,13 +14,13 @@ const Events = () => {
 
   const butonBaslik = (a) => {
     document.querySelector(".btn-danger").textContent = a;
-    count = -1
-    arttir()
+    count = -1;
+    arttir();
   };
   console.log(count);
   return (
     //! ReactArea (JSX Area)
-    <div>
+    <div className="container text-center mt-4">
       <h1>INFO : {title}</h1>
       <h2>
         Count : <span>{count}</span>
