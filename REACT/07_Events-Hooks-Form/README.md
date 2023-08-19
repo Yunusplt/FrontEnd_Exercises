@@ -26,6 +26,7 @@
 
 ### Hooks
 - useState
+- Hooklar Lifecycle methodlarin yerini almis durumda. artik lifecycle cok kullanilmiyor...
 
 
 <!-- 
