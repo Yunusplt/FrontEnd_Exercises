@@ -17,6 +17,7 @@ const People = () => {
   useEffect(() => {
     // console.log(axios.get("https://jsonplaceholder.typicode.com/users"));
     // axios.get("https://jsonplaceholder.typicode.com/users").then((res)=>console.log(res))
+
     axios
       .get("https://jsonplaceholder.typicode.com/users")
       .then((res) => setPeople(res.data));
@@ -29,7 +30,7 @@ const People = () => {
       <div className="row">
         {people.map((item) => {
           return (
-            <div className="col-sm-6 col-md-4 col-lg-2 col-12">
+            <div className="col-sm-6 col-md-4 col-lg-2 col-12" key={item.id}>
               <img
                 src={`https://avatars.dicebear.com/api/avataaars/${item.id}.svg`}
                 alt={item.name}

@@ -1,0 +1,49 @@
+/* .zebra-list {
+    list-style: none;
+    padding: 0;
+} */
+
+/* .zebra-list li:nth-child(odd) {
+    background-color: #f2f2f2;
+    /* Tek satırların rengi 
+} */
+
+/* .zebra-list li:nth-child(even) {
+    background-color: #fff;
+    /* Çift satırların rengi
+} */
+
+/* İsteğe bağlı: Satırların arasına boşluk vermek için
+.zebra-list li {
+    padding: 10px;
+} */
+
+  /* return (<div className='container' > <ul class="zebra-list" > {
+          information.map(item=> {
+                  return <li>Data 1</li>
+              })
+      }
+
+      </ul> </div>); */
+/*! buraya kadarki kodlar asagida tanimlananon liste hali. alt bölüm compenent icinde bulunan bölüm onu daburaya koydum  */
+
+
+.zebra-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.zebra-table th,
+.zebra-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.zebra-table th {
+    background-color: #f2f2f2;
+}
+
+.zebra-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
