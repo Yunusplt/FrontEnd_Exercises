@@ -7,6 +7,7 @@
 
 
 
+<!-- 
 ### What there is here
 - buttons
 - hover 
@@ -14,5 +15,6 @@
 - transform
 - ic ice sass
 - _variable.scss
-- _reset.scss
+- _reset.scss 
+-->
 

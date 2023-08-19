@@ -2,6 +2,10 @@
 - npm install
 - npm start
 
+### What I used
+- bootsrap
+- react-icon 
+
 
 
 ### For Bootstrap
@@ -9,6 +13,27 @@
 - import "bootstrap/dist/css/bootstrap.min.css";  in App.js
 
 
+
+### Events
+- onClick
+- onInput 
+- onChange
+- onSubmit
+- onMouseMove
+- onKeyDown
+- addEventListener
+
+
+### Hooks
+- useState
+
+
 <!-- 
--Javascript calisip daha sonra react calismak üzere burayi terk ediyorum   18.08
+What there is here
+- layerX
+- offsetX
+- clientX
+- PageX
+- e.target.value
  -->
+

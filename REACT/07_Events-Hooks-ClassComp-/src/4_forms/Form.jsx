@@ -5,7 +5,8 @@ import React, { useState } from "react";
 //! in HTML value / in React defaultValue
 //! selected yerine defaultValue tavsiye ediyor console
 //! autocomplete kullanmami istiyor console.
-
+//! form yapisi kullanildigi zaman enter'a basildiginda otomatik submit ediyor...
+//! 
 
 
 const Form = () => {
