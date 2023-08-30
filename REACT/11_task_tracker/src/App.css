@@ -34,8 +34,7 @@ body{
     margin: 8px 0;
     padding: 5px 10px;
     border-radius: 5px;
-    border-left: 10px;
-    border-color: darkcyan;
+    border-left: 8px solid;
     text-decoration: line-through;
     display: flex;
 }
@@ -98,6 +97,9 @@ header{
 header h1{
     text-transform: uppercase;
     margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px yellowgreen;
+    font-size: 38px;
 }
 
 header button{
