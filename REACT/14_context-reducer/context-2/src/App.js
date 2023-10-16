@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import ShowUsers from "./pages/ShowUsers";
+import { useEffect } from "react";
+import { createContext } from "react";
+
+export const UserContext=createContext()
 
 function App() {
+  const [user, setUser] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.github.com/users")
+      .then((res) => res.json())
+      .then((data) => setUser(data));
+  }, []) // eslint-disable-line
+
+  const changeWidth=(newWidth, id)=>{
+    setUser(
+      user.map((item)=>item.id === id ? {...item, width:newWidth} : item)
+    )
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContext.Provider value={{user,changeWidth}}>
+      <ShowUsers />
+    </UserContext.Provider>
   );
 }
 
