@@ -3,7 +3,7 @@ import { StudentContext } from '../App'
 
 const OgrenciItem = () => {
 
-    const {student, changeRenk} = useContext(StudentContext)
+    const {student, changeColor} = useContext(StudentContext)
 
     console.table(student)
 
@@ -15,7 +15,8 @@ const OgrenciItem = () => {
                     <h3>NAME: {item.name}</h3>
                     <h4>EMAIL: {item.email}</h4>
                     <h4>AGE: {item.age}</h4>
-                    Color: <input type="text" value={item.color} />
+                    Color: <input type="text" value={item.color} onChange={(e)=>changeColor(e.target.value, item.id)} />
+
                 </div>
             )
         })}

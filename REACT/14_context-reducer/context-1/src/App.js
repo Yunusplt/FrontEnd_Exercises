@@ -9,12 +9,14 @@ function App() {
 
   const [student, setStudent] = useState(data);
 
-  const chanceColor =()=>{
-    //inputtaki renkleri degistirecek function
+  const changeColor =(newRenk, id)=>{
+    setStudent(
+      student.map((item)=>item.id === id ? {...item, color:newRenk} : item)
+    )
   }
 
   return (
- <StudentContext.Provider value={{student, chanceColor}}>
+ <StudentContext.Provider value={{student, changeColor}}>
  <Home/>
  </StudentContext.Provider>
   );
